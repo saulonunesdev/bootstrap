@@ -1,0 +1,26 @@
+{
+  "name": "boootstrap",
+  "version": "0.0.1",
+  "description": "A TS Bootstrap BoilerPlate",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/index.js",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "keywords": [
+    "typescript",
+    "boilerplate",
+    "bootstrap",
+    "linters",
+    "husky",
+    "hooks",
+    "repo",
+    "git"
+  ],
+  "author": "Saulo Nunes <saulo@taverna.dev> (https://saulo.taverna.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  }
+}
