@@ -1,0 +1,20 @@
+{
+  "extends": "npm-package-json-lint-config-default",
+  "overrides": [
+    {
+      "patterns": ["./package.json"],
+      "rules": {
+        "require-license": "error",
+        "license-type": "error",
+        "valid-values-license": ["error", ["MIT"]],
+        "no-git-dependencies": "error",
+        "no-git-devDependencies": "error",
+        "require-description": "error",
+        "valid-values-private": ["error", [true]],
+        "valid-values-name-scope": ["error", ["@saulonunesdev"]],
+        "no-repeated-dependencies": "error",
+        "require-author": "error"
+      }
+    }
+  ]
+}

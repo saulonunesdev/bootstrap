@@ -11,3 +11,5 @@
 - [Eslint Javascript Standard Rules](https://github.com/standard/eslint-config-standard)
 - [Eslint Typescrit Standard Rules](https://github.com/standard/eslint-config-standard-with-typescript)
 - [Depcheck](https://www.npmjs.com/package/depcheck)
+- [Lock File Lint](https://www.npmjs.com/package/lockfile-lint)
+- [Package.json Lint](https://npmpackagejsonlint.org/docs/rules/)
