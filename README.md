@@ -1,4 +1,4 @@
-# boootstrap
+# Bootstrap
 
 A TS Bootstrap BoilerPlate
 
@@ -8,7 +8,7 @@ A TS Bootstrap BoilerPlate
 
 - Node 20+
 
-### Hot to use this repo
+### How to use this repo
 
 1. Clone this repo
 2. Remove the remote the origin
