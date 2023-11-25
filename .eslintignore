@@ -1,0 +1,11 @@
+# eslint ignores hidden files by default
+!.*
+
+# Folders
+node_modules/
+build/
+dist/
+coverage/
+
+# Files
+package-lock.json

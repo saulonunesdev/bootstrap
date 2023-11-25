@@ -3,5 +3,11 @@
   "compilerOptions": {
     "sourceMap": false
   },
-  "exclude": ["tests", "src/**/*.spec.ts", "src/**/*.test.ts"]
+  "exclude": [
+    "tests",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts",
+    "scripts",
+    "package.json"
+  ]
 }

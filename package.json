@@ -1,9 +1,11 @@
 {
-  "name": "boootstrap",
+  "name": "@saulonunesdev/boootstrap",
   "version": "0.0.1",
   "description": "A TS Bootstrap BoilerPlate",
+  "author": "Saulo Nunes <saulo@taverna.dev> (https://saulo.taverna.dev)",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "eslint .",
     "start": "node build/index.js",
     "compile": "tsc -p tsconfig.build.json"
   },
@@ -17,10 +19,11 @@
     "repo",
     "git"
   ],
-  "author": "Saulo Nunes <saulo@taverna.dev> (https://saulo.taverna.dev)",
-  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.8.10",
+    "eslint": "^8.53.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
     "typescript": "^5.2.2"
   }
 }

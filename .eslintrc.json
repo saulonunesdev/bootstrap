@@ -1,0 +1,22 @@
+{
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "extends": ["standard"]
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["standard-with-typescript"],
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "no-undef": ["error"]
+      }
+    }
+  ],
+  "env": {
+    "jest": true
+  }
+}
