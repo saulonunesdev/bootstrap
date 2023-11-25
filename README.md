@@ -6,7 +6,7 @@ A TS Bootstrap BoilerPlate
 
 ### Dependencies
 
-- Node 18+
+- Node 20+
 
 ### Hot to use this repo
 
