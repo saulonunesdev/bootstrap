@@ -13,3 +13,4 @@
 - [Depcheck](https://www.npmjs.com/package/depcheck)
 - [Lock File Lint](https://www.npmjs.com/package/lockfile-lint)
 - [Package.json Lint](https://npmpackagejsonlint.org/docs/rules/)
+- [Yaml Lint](https://www.npmjs.com/package/yaml-lint)

@@ -9,7 +9,10 @@
     "test:depcheck": "depcheck .",
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a registry.npmjs.org -s",
     "test:package": "npmPkgJsonLint .",
+    "test:audit": "npm audit --omit=dev",
+    "test:yaml": "yamllint **/*.{yaml,yml}",
     "test:eslint": "eslint .",
+    "test:ts": "tsc --noemit",
     "fix": "npm-run-all -s fix:*",
     "fix:eslint": "eslint . --fix",
     "start": "node build/index.js",
@@ -40,6 +43,7 @@
     "npm-package-json-lint": "^7.1.0",
     "npm-package-json-lint-config-default": "^6.0.0",
     "npm-run-all": "^4.1.5",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "yaml-lint": "^1.7.0"
   }
 }

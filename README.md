@@ -42,3 +42,11 @@ git commit -m "chore: first commit"
 ```
 git push -u origin main
 ```
+
+
+## TO DO
+
+- Add Tests
+- Add hooks / husky
+- Add Coverage Tests PR
+- Add DependaBot
