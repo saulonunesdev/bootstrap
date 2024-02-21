@@ -5,6 +5,8 @@
   "author": "Saulo Nunes <saulo@taverna.dev> (https://saulo.taverna.dev)",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky",
+    "precommit": "lint-staged",
     "test": "npm-run-all -s test:*",
     "test:depcheck": "depcheck .",
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a registry.npmjs.org -s",
@@ -13,6 +15,7 @@
     "test:yaml": "yamllint **/*.{yaml,yml}",
     "test:eslint": "eslint .",
     "test:ts": "tsc --noemit",
+    "test:jest": "jest --silent --no-cache",
     "fix": "npm-run-all -s fix:*",
     "fix:eslint": "eslint . --fix",
     "start": "node build/index.js",
@@ -29,6 +32,8 @@
     "git"
   ],
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
@@ -39,10 +44,14 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.3.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^9.0.11",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.2",
     "lockfile-lint": "^4.12.1",
     "npm-package-json-lint": "^7.1.0",
     "npm-package-json-lint-config-default": "^6.0.0",
     "npm-run-all": "^4.1.5",
+    "ts-jest": "^29.1.2",
     "typescript": "5.2.2",
     "yaml-lint": "^1.7.0"
   }

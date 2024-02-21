@@ -14,3 +14,12 @@
 - [Lock File Lint](https://www.npmjs.com/package/lockfile-lint)
 - [Package.json Lint](https://npmpackagejsonlint.org/docs/rules/)
 - [Yaml Lint](https://www.npmjs.com/package/yaml-lint)
+
+## Git Hooks
+- [Lint Staged](https://www.npmjs.com/package/lint-staged?activeTab=readme)
+- [Husky](https://typicode.github.io/husky/how-to.html#adding-a-new-hook)
+
+## VsCode Extensions
+
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
