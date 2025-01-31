@@ -10,7 +10,14 @@ A TS Bootstrap BoilerPlate
 
 ### How to use this repo
 
-1. Clone this repo
+1. Clone this repo with your new repo folder name
+
+```sh
+git clone https://github.com/saulonunesdev/bootstrap FOLDERNAME
+# or
+git clone https://github.com/saulonunesdev/bootstrap.git FOLDERNAME
+```
+
 2. Remove the remote the origin
 
 ```sh
@@ -42,9 +49,3 @@ git commit -m "chore: first commit"
 ```
 git push -u origin main
 ```
-
-
-## TO DO
-
-- Add Coverage Tests PR
-- Add DependaBot

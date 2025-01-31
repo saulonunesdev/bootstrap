@@ -1,0 +1,39 @@
+name: Coverage Report
+
+on:
+  pull_request:
+      branches:
+        - main
+        - prod
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    name: Tests Coverage
+    permissions:
+      contents: "read"
+      id-token: "write"
+      pull-requests: "write"
+      checks: "write"
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+
+      - name: Set Node.js
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "22"
+          registry-url: https://npm.pkg.github.com
+          cache-dependency-path: package-lock.json
+        env:
+          RUNNER_TEMP: "/tmp/"
+
+      - name: Install Node Modules
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          working-directory: packages/businesses-sqs-pusher-cron
+          custom-title: Coverage report for businesses-sqs-pusher-cron
+          test-script: npm run test:jest
