@@ -9,7 +9,7 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
-    name: Tests Coverage
+    name: Coverage Report
     permissions:
       contents: "read"
       id-token: "write"

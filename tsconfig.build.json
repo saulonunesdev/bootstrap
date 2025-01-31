@@ -4,10 +4,10 @@
     "sourceMap": false
   },
   "exclude": [
-    "tests",
+    "package.json",
+    "scripts",
     "src/**/*.spec.ts",
     "src/**/*.test.ts",
-    "scripts",
-    "package.json"
+    "tests"
   ]
 }

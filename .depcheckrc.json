@@ -1,8 +1,8 @@
 {
   "ignores": [
-    "@types/node",
-    "npm-package-json-lint-config-default",
     "@jest/globals",
-    "@types/jest"
+    "@types/jest",
+    "@types/node",
+    "npm-package-json-lint-config-default"
   ]
 }
