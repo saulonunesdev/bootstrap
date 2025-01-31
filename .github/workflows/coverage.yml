@@ -34,6 +34,5 @@ jobs:
 
       - uses: ArtiomTr/jest-coverage-report-action@v2
         with:
-          working-directory: packages/businesses-sqs-pusher-cron
-          custom-title: Coverage report for businesses-sqs-pusher-cron
+          custom-title: Coverage Report
           test-script: npm run test:jest
