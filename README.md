@@ -21,7 +21,7 @@ git clone https://github.com/saulonunesdev/bootstrap.git FOLDERNAME
 2. Remove the remote the origin
 
 ```sh
-git remove origin
+git remote remove origin
 ```
 
 3. Create a new empty git repo
