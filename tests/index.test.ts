@@ -19,6 +19,6 @@ test('start function logs correct message', async () => {
   consoleSpy.mockRestore()
 })
 
-test('world constant is "World!!!"', () => {
-  expect(world).toBe('World!!!')
+test('world constant is "World!!!!"', () => {
+  expect(world).toBe('World!!!!')
 })
