@@ -1,21 +1,26 @@
-name: CI
+name: Coverage Report
 
 on:
-  push:
-    branches: [main, development]
   pull_request:
-    branches: [main, development]
+      branches:
+        - main
+        - development
 
 jobs:
-  tests:
+  coverage:
     runs-on: ubuntu-latest
-    name: Tests on Node 22
+    name: Coverage Report
+    permissions:
+      contents: "read"
+      id-token: "write"
+      pull-requests: "write"
+      checks: "write"
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
 
       - name: Set Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0
         with:
           node-version: "22"
           registry-url: https://npm.pkg.github.com
@@ -27,5 +32,7 @@ jobs:
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Run Tests
-        run: npm test
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          custom-title: Coverage Report
+          test-script: npm run test:jest

@@ -2,12 +2,15 @@
   "editor.formatOnSave": true,
   "standard.enable": false,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "prettier.enable": false,
   "eslint.format.enable": true,
   "totalTypeScript.hideAllTips": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "json.validate.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "json",
+    "json5",
+    "jsonc",
+    "typescript"
+  ]
 }
