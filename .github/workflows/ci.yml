@@ -2,20 +2,20 @@ name: CI
 
 on:
   push:
-    branches: [main, dev]
+    branches: [main, development]
   pull_request:
-    branches: [main, dev]
+    branches: [main, development]
 
 jobs:
   tests:
     runs-on: ubuntu-latest
-    name: Tests on Node 18
+    name: Tests on Node 22
     steps:
       - name: "Checkout"
         uses: actions/checkout@v4
 
       - name: Set Node.js
-        uses: actions/setup-node@v4.2.0
+        uses: actions/setup-node@v4
         with:
           node-version: "22"
           registry-url: https://npm.pkg.github.com
