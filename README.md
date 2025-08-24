@@ -14,8 +14,6 @@ A TS Bootstrap BoilerPlate
 
 ```sh
 git clone https://github.com/saulonunesdev/bootstrap FOLDERNAME
-# or
-git clone https://github.com/saulonunesdev/bootstrap.git FOLDERNAME
 ```
 
 2. Remove the remote the origin
@@ -24,28 +22,28 @@ git clone https://github.com/saulonunesdev/bootstrap.git FOLDERNAME
 git remote remove origin
 ```
 
-3. Create a new empty git repo
+3. Add origin
 
-> To avoid merge conflicts customize the following files instead of creating during repo creation:
-
-- README.md
-- license
-- .gitignore
-
-4. Add origin
+- Create a New Repo in Your Git or Organization
+- Then
 
 ```sh
 git remote add origin <git repo url>
 ```
 
-5. Commit changes
+4. Commit changes
 
 ```sh
 git commit -m "chore: first commit"
 ```
 
-6. Push changes to the new repo
+5. Push changes to the new repo
 
 ```
 git push -u origin main
 ```
+
+### Customize Author
+
+- Update Rule `valid-values-name-scope` in `.npmpackagejsonlintrc.json`.
+- Then you can update the author in `package.json`

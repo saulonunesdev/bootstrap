@@ -1,0 +1,8 @@
+# JSON
+*.json
+*.jsonc
+*.json5
+
+# YAML
+*.yml
+*.yaml
