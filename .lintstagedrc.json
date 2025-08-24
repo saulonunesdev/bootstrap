@@ -1,7 +1,9 @@
 {
   "package.json": "npmPkgJsonLint .",
   "package-lock.json": "lockfile-lint -p package-lock.json -t npm -a registry.npmjs.org -s",
-  "*.{js,ts}": "eslint --config=.eslintrc.json",
-  "*.json": "eslint --fix --config=.eslintrc.json",
-  "*.{yaml,yml}": "yamllint"
+  "*.{js,ts}": [
+    "prettier --write --ignore-unknown",
+    "eslint"
+  ],
+  "*.json": "eslint --fix"
 }

@@ -2,12 +2,12 @@
   "extends": "./tsconfig",
   "compilerOptions": {
     "noEmit": false,
-    "outDir": "dist"
+    "outDir": "dist",
+    "sourceMap": false
   },
   "exclude": [
-    "**/*.test.*",
-    "debugger.ts",
-    "package.json",
-    "tests"
+    "tests/**/*.ts",
+    "scripts/**/*.ts",
+    "*.config.*"
   ]
 }

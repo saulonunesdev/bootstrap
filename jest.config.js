@@ -1,4 +1,5 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
+/* eslint-disable @typescript-eslint/no-magic-numbers -- jest settings*/
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',

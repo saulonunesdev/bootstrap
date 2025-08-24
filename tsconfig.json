@@ -8,6 +8,7 @@
       "dom"
     ],
     "allowJs": true,
+    "noEmit": true,
     "strict": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -17,9 +18,10 @@
     "resolveJsonModule": true
   },
   "include": [
+    "*.config.*",
+    "scripts/**/*.ts",
     "src/**/*.ts",
-    "tests/**/*.ts",
-    "scripts/**/*.ts"
+    "tests/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
