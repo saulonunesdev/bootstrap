@@ -1,16 +1,23 @@
 {
   "editor.formatOnSave": true,
   "standard.enable": false,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "prettier.enable": false,
+
   "eslint.format.enable": true,
   "totalTypeScript.hideAllTips": true,
   "json.validate.enable": false,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+
   "eslint.validate": [
-    "javascript",
     "json",
-    "json5",
-    "jsonc",
-    "typescript"
-  ]
+    "javascript", 
+     "json5", 
+     "jsonc",
+      "typescript"
+    ],
+
+  "[json]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+  "[jsonc]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+  "[json5]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" }
 }

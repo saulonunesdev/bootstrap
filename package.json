@@ -12,10 +12,12 @@
     "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a registry.npmjs.org -s",
     "test:package": "npmPkgJsonLint .",
     "test:audit": "npm audit --omit=dev",
+    "test:format": "prettier . --check",
     "test:eslint": "eslint .",
     "test:ts": "tsc -p tsconfig.build.json --noemit",
     "test:jest": "jest --silent --no-cache",
     "fix": "npm-run-all -s fix:*",
+    "fix:format": "prettier . --write",
     "fix:eslint": "eslint . --fix",
     "start": "node build/index.js",
     "compile": "tsc -p tsconfig.build.json"
@@ -23,11 +25,13 @@
   "keywords": [
     "boilerplate",
     "bootstrap",
+    "eslint-config-love",
     "git",
     "hooks",
     "husky",
     "linters",
     "repo",
+    "standard",
     "typescript"
   ],
   "devDependencies": {
@@ -45,6 +49,7 @@
     "npm-package-json-lint": "^9.0.0",
     "npm-package-json-lint-config-default": "^8.0.1",
     "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
     "ts-jest": "^29.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
