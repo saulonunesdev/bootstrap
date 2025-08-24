@@ -1,31 +1,24 @@
-{
-  "overrides": [
-    {
-      "files": ["*.js"],
-      "extends": ["standard"]
-    },
-    {
-      "files": [
-        "*.ts",
-        "*.tsx"
-      ],
-      "extends": ["standard-with-typescript"],
-      "parserOptions": {
-        "parser": "@typescript-eslint/parser",
-        "project": "./tsconfig.json"
-      },
-      "rules": {
-        "no-undef": ["error"]
-      }
-    },
-    {
-      "files": [
+import love from 'eslint-config-love'
+import eslintPluginJsonc from 'eslint-plugin-jsonc'
+
+export default [
+  { ignores: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**', 'package-lock.json'] },
+  {
+    ...love,
+    files: ['**/*.js', '**/*.ts'],
+  },
+  {
+    files: ['**/*.js', '**/*.ts'],
+    rules: { 'no-console': 'off' }
+  },
+  ...eslintPluginJsonc.configs['flat/recommended-with-jsonc'],
+  {
+    files: [
         "*.json",
         "*.jsonc",
         "*.json5"
       ],
-      "extends": ["plugin:jsonc/recommended-with-jsonc"],
-      "rules": {
+    "rules": {
         "jsonc/indent": [
           "error",
           2
@@ -73,18 +66,11 @@
           "never"
         ]
       }
-    }
-  ],
-  "env": {
-    "jest": true
-  },
-  "ignorePatterns": [
-    "!.*",
-    "**/build/*",
-    "**/coverage/*",
-    "**/dist/*",
-    "**/node_modules/*",
-    "**/technologies/*",
-    "package-lock.json"
-  ]
-}
+  }
+  // {
+  //   ...love,
+  //   files: ['**/*.js', '**/*.ts'],
+  //   ignores: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**'] ,
+  //   rules: { 'no-console': 'off' }
+  // },
+]
