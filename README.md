@@ -1,6 +1,6 @@
 # Bootstrap
 
-A TS Bootstrap BoilerPlate
+A TS Bootstrap BoilerPlate.
 
 > This project was configured to be used in vscode, feel free to open a PR with custom settings for any IDE
 
