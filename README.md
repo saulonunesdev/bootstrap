@@ -2,6 +2,8 @@
 
 A TS Bootstrap BoilerPlate.
 
+test
+
 > This project was configured to be used in vscode, feel free to open a PR with custom settings for any IDE
 
 ### Dependencies
